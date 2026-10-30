@@ -152,14 +152,6 @@ metrics, and the evaluation harness itself (a perfect answer must score 100%, a 
   and a shared store before scaling out.
 - Ollama cannot run on free hosts; production uses the hosted provider, local development uses Ollama. Same code, one env var.
 
-## Known limitations (be upfront about these in interviews)
-
-- Schema changes use `create_all`; add **Alembic** migrations before a real production rollout.
-- Retrieval is lexical (TF-IDF). Embeddings (e.g. `nomic-embed-text` via Ollama, or pgvector) are a drop-in upgrade behind `services/retrieval.Index`.
-- Queries for one user are serialised by a lock (DuckDB cannot mix read-only and read-write connections to one file in a process).
-- No email verification, password reset or token refresh.
-- Execution accuracy is measured on synthetic sales/customer data; real-world messy schemas will score lower.
-- The "why did X change?" multi-step investigation mode from the prototype is not ported; the insights route covers overview-style requests.
 
 ## Verification status (what was and wasn't actually run)
 
