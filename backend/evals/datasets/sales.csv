@@ -1,0 +1,601 @@
+order_id,order_date,region,category,product,quantity,unit_price,discount,revenue,customer_id,channel
+1,2023-11-16,East,Office,Printer,2,250,0.15,425.0,52,Retail
+2,2023-08-19,East,Office,Pen Set,1,12,0,12,9,Online
+3,2023-08-14,North,Office,Printer,2,250,0.1,450.0,1,Partner
+4,2023-02-02,North,Office,Notebook,2,5,0,10,43,Partner
+5,2023-08-08,South,Electronics,Phone,6,600,0.05,3420.0,70,Partner
+6,2024-04-29,South,Office,Printer,4,250,0,1000,53,Online
+7,2024-03-09,West,Electronics,Headphones,4,120,0,480,53,Partner
+8,2023-04-11,West,Electronics,Headphones,6,120,0.15,612.0,8,Partner
+9,2023-07-14,West,Furniture,Desk,2,300,0,600,69,Online
+10,2023-09-13,West,Furniture,Desk,3,300,0.05,855.0,10,Partner
+11,2023-01-16,South,Electronics,Laptop,6,900,0.1,4860.0,12,Online
+12,2024-02-15,South,Furniture,Chair,4,150,0,600,8,Retail
+13,2024-04-10,West,Electronics,Phone,3,600,0.2,1440.0,37,Partner
+14,2024-05-13,South,Office,Printer,6,250,0.15,1275.0,20,Retail
+15,2023-03-04,North,Electronics,Laptop,5,900,0.15,3825.0,41,Online
+16,2024-06-27,North,Office,Pen Set,5,12,0.2,48.0,21,Partner
+17,2023-03-11,West,Electronics,Laptop,1,900,0.1,810.0,31,Online
+18,2023-02-10,West,Office,Notebook,5,5,0.1,22.5,11,Partner
+19,2023-09-25,East,Office,Printer,5,250,0,1250,27,Online
+20,2023-11-04,East,Furniture,Chair,2,150,0.15,255.0,59,Online
+21,2023-04-13,South,Electronics,Phone,5,600,0.1,2700.0,10,Partner
+22,2023-09-08,East,Furniture,Desk,3,300,0,900,48,Online
+23,2024-06-25,East,Furniture,Bookshelf,6,200,0,1200,2,Partner
+24,2023-04-20,East,Electronics,Laptop,3,900,0,2700,20,Retail
+25,2023-07-28,West,Office,Notebook,6,5,0,30,34,Retail
+26,2023-10-11,North,Electronics,Laptop,6,900,0.05,5130.0,6,Retail
+27,2024-03-28,North,Electronics,Headphones,3,120,0,360,55,Online
+28,2023-02-06,South,Electronics,Headphones,2,120,0.1,216.0,48,Retail
+29,2023-02-10,South,Electronics,Laptop,3,900,0,2700,46,Partner
+30,2024-02-21,South,Electronics,Headphones,1,120,0,120,20,Online
+31,2023-12-07,South,Electronics,Phone,1,600,0,600,53,Retail
+32,2023-02-09,South,Electronics,Headphones,1,120,0.05,114.0,61,Online
+33,2023-08-22,North,Furniture,Chair,3,150,0.2,360.0,29,Partner
+34,2023-03-13,East,Electronics,Phone,3,600,0,1800,36,Partner
+35,2023-12-06,North,Office,Pen Set,6,12,0.2,57.6,4,Retail
+36,2023-04-22,East,Electronics,Headphones,3,120,0,360,56,Partner
+37,2023-04-29,South,Furniture,Chair,5,150,0.1,675.0,50,Retail
+38,2024-06-16,South,Electronics,Headphones,4,120,0,480,69,Retail
+39,2023-11-18,East,Furniture,Desk,6,300,0,1800,16,Partner
+40,2024-02-17,South,Furniture,Bookshelf,4,200,0,800,38,Online
+41,2023-06-28,West,Furniture,Bookshelf,4,200,0.15,680.0,39,Partner
+42,2024-03-16,West,Electronics,Phone,3,600,0,1800,42,Retail
+43,2024-04-29,North,Furniture,Bookshelf,2,200,0.1,360.0,22,Retail
+44,2023-12-10,South,Office,Printer,6,250,0.1,1350.0,12,Partner
+45,2023-01-26,South,Furniture,Desk,2,300,0,600,6,Retail
+46,2023-07-19,West,Office,Notebook,4,5,0.05,19.0,50,Retail
+47,2023-01-06,West,Electronics,Laptop,6,900,0.15,4590.0,14,Online
+48,2023-02-21,North,Electronics,Headphones,5,120,0.05,570.0,32,Retail
+49,2023-11-21,West,Electronics,Phone,6,600,0.1,3240.0,57,Partner
+50,2024-05-01,East,Furniture,Desk,6,300,0.2,1440.0,58,Online
+51,2023-09-02,West,Office,Pen Set,5,12,0.05,57.0,36,Online
+52,2023-12-10,North,Office,Pen Set,2,12,0,24,41,Online
+53,2023-06-06,North,Electronics,Laptop,4,900,0.15,3060.0,28,Retail
+54,2024-03-01,South,Furniture,Chair,5,150,0.05,712.5,8,Retail
+55,2024-01-25,North,Furniture,Bookshelf,6,200,0,1200,62,Retail
+56,2023-08-14,South,Furniture,Chair,4,150,0.1,540.0,63,Retail
+57,2023-12-11,South,Furniture,Chair,1,150,0.05,142.5,52,Retail
+58,2024-02-08,North,Electronics,Headphones,5,120,0,600,4,Partner
+59,2023-02-21,West,Furniture,Desk,4,300,0,1200,34,Retail
+60,2024-01-24,West,Electronics,Phone,3,600,0,1800,36,Retail
+61,2023-02-23,South,Electronics,Phone,1,600,0.15,510.0,45,Partner
+62,2023-02-01,South,Electronics,Headphones,1,120,0.2,96.0,32,Online
+63,2024-04-29,South,Office,Notebook,2,5,0,10,15,Retail
+64,2023-04-28,East,Office,Pen Set,3,12,0,36,21,Online
+65,2024-01-20,South,Office,Notebook,3,5,0.1,13.5,51,Online
+66,2023-04-15,North,Office,Printer,6,250,0,1500,39,Partner
+67,2024-01-15,East,Electronics,Phone,5,600,0.05,2850.0,9,Online
+68,2024-01-06,South,Furniture,Chair,1,150,0.05,142.5,59,Retail
+69,2023-10-04,West,Electronics,Headphones,5,120,0.15,510.0,69,Retail
+70,2023-11-27,North,Furniture,Bookshelf,5,200,0,1000,32,Retail
+71,2024-01-24,North,Furniture,Desk,4,300,0.1,1080.0,44,Retail
+72,2023-12-30,East,Furniture,Desk,4,300,0,1200,34,Retail
+73,2023-01-11,South,Office,Printer,3,250,0.1,675.0,67,Online
+74,2023-09-04,West,Electronics,Headphones,4,120,0.05,456.0,61,Retail
+75,2024-02-19,East,Electronics,Laptop,3,900,0,2700,32,Partner
+76,2024-06-27,West,Office,Pen Set,4,12,0.1,43.2,45,Partner
+77,2024-04-09,East,Office,Pen Set,3,12,0.15,30.6,35,Retail
+78,2023-11-20,South,Electronics,Laptop,6,900,0,5400,16,Online
+79,2024-06-21,North,Electronics,Headphones,4,120,0,480,37,Online
+80,2023-11-06,South,Furniture,Desk,3,300,0,900,2,Retail
+81,2023-05-10,North,Electronics,Laptop,5,900,0,4500,63,Online
+82,2024-03-27,South,Office,Pen Set,4,12,0.05,45.6,44,Online
+83,2023-03-08,West,Furniture,Chair,1,150,0.2,120.0,52,Online
+84,2023-06-05,East,Office,Printer,6,250,0,1500,20,Online
+85,2024-03-02,West,Electronics,Laptop,5,900,0.2,3600.0,29,Retail
+86,2023-11-09,North,Furniture,Chair,5,150,0.05,712.5,8,Online
+87,2023-03-25,South,Office,Notebook,3,5,0.15,12.75,21,Online
+88,2024-02-23,West,Office,Notebook,2,5,0,10,58,Retail
+89,2023-10-17,North,Electronics,Laptop,3,900,0.15,2295.0,59,Partner
+90,2023-07-22,North,Electronics,Phone,6,600,0.1,3240.0,55,Partner
+91,2023-05-26,North,Electronics,Headphones,2,120,0,240,10,Online
+92,2023-10-23,North,Furniture,Bookshelf,6,200,0.2,960.0,57,Retail
+93,2023-10-06,West,Office,Pen Set,6,12,0.05,68.4,65,Retail
+94,2023-11-27,North,Electronics,Headphones,1,120,0.05,114.0,33,Online
+95,2023-01-22,North,Electronics,Headphones,5,120,0.1,540.0,35,Online
+96,2023-10-12,West,Furniture,Bookshelf,6,200,0.05,1140.0,24,Partner
+97,2024-02-23,East,Furniture,Desk,4,300,0,1200,43,Partner
+98,2024-05-22,West,Electronics,Laptop,3,900,0.05,2565.0,37,Partner
+99,2023-09-16,North,Electronics,Phone,1,600,0,600,42,Retail
+100,2024-04-18,North,Office,Notebook,6,5,0.2,24.0,53,Online
+101,2024-05-25,North,Office,Pen Set,5,12,0.2,48.0,57,Online
+102,2024-03-24,North,Furniture,Bookshelf,2,200,0,400,63,Online
+103,2023-06-12,North,Office,Printer,2,250,0.15,425.0,40,Partner
+104,2023-04-27,North,Furniture,Desk,2,300,0.2,480.0,60,Partner
+105,2024-06-05,West,Electronics,Phone,6,600,0,3600,35,Retail
+106,2023-05-29,South,Furniture,Desk,4,300,0.1,1080.0,50,Partner
+107,2023-03-13,West,Office,Printer,2,250,0.2,400.0,36,Retail
+108,2023-11-02,South,Office,Pen Set,1,12,0,12,63,Retail
+109,2024-01-22,East,Office,Pen Set,3,12,0,36,59,Online
+110,2023-08-28,North,Office,Notebook,5,5,0.05,23.75,53,Retail
+111,2024-01-26,South,Office,Pen Set,6,12,0.2,57.6,50,Retail
+112,2023-12-06,West,Electronics,Laptop,5,900,0.1,4050.0,13,Online
+113,2023-05-28,South,Office,Pen Set,1,12,0.15,10.2,53,Online
+114,2024-02-12,East,Furniture,Chair,3,150,0.1,405.0,11,Partner
+115,2024-05-14,North,Office,Pen Set,3,12,0.15,30.6,70,Partner
+116,2023-10-22,North,Electronics,Laptop,6,900,0.15,4590.0,30,Retail
+117,2023-04-13,South,Electronics,Headphones,6,120,0.2,576.0,57,Partner
+118,2023-02-27,East,Furniture,Desk,1,300,0,300,38,Retail
+119,2024-02-26,South,Furniture,Desk,2,300,0.1,540.0,24,Online
+120,2023-09-04,South,Electronics,Headphones,4,120,0.1,432.0,64,Online
+121,2023-09-19,West,Furniture,Bookshelf,3,200,0.05,570.0,2,Retail
+122,2024-03-28,East,Office,Printer,2,250,0,500,45,Partner
+123,2023-11-06,West,Furniture,Bookshelf,3,200,0.05,570.0,26,Retail
+124,2024-01-03,East,Electronics,Laptop,4,900,0.1,3240.0,38,Online
+125,2023-02-20,East,Office,Pen Set,3,12,0,36,64,Online
+126,2023-07-14,South,Office,Pen Set,2,12,0.15,20.4,33,Partner
+127,2023-11-13,North,Electronics,Headphones,6,120,0,720,57,Partner
+128,2023-10-30,West,Furniture,Bookshelf,2,200,0,400,42,Online
+129,2024-06-27,East,Electronics,Laptop,5,900,0,4500,65,Online
+130,2023-12-13,West,Furniture,Chair,3,150,0.15,382.5,15,Online
+131,2024-02-11,North,Electronics,Laptop,6,900,0.15,4590.0,47,Retail
+132,2024-04-10,East,Electronics,Phone,5,600,0,3000,48,Partner
+133,2023-08-28,North,Furniture,Bookshelf,3,200,0,600,61,Partner
+134,2023-03-06,East,Office,Pen Set,5,12,0,60,60,Partner
+135,2023-02-08,West,Furniture,Desk,2,300,0,600,39,Online
+136,2024-02-02,East,Electronics,Laptop,5,900,0,4500,59,Partner
+137,2023-06-08,North,Office,Printer,5,250,0.05,1187.5,54,Retail
+138,2024-01-15,West,Office,Pen Set,3,12,0,36,28,Retail
+139,2024-01-12,East,Electronics,Phone,1,600,0.15,510.0,70,Online
+140,2024-04-10,South,Furniture,Chair,2,150,0,300,12,Partner
+141,2023-12-08,South,Office,Printer,1,250,0,250,32,Partner
+142,2023-08-10,East,Electronics,Laptop,5,900,0,4500,30,Online
+143,2023-05-29,East,Office,Notebook,3,5,0.2,12.0,17,Online
+144,2023-01-16,South,Electronics,Headphones,1,120,0,120,46,Partner
+145,2023-02-23,West,Furniture,Desk,2,300,0,600,17,Partner
+146,2024-04-04,North,Electronics,Headphones,1,120,0.05,114.0,47,Retail
+147,2024-06-17,West,Office,Notebook,5,5,0,25,39,Partner
+148,2024-02-16,North,Electronics,Laptop,4,900,0.2,2880.0,55,Retail
+149,2023-11-26,North,Office,Pen Set,1,12,0,12,19,Online
+150,2023-11-29,East,Furniture,Bookshelf,6,200,0.1,1080.0,49,Retail
+151,2023-04-28,West,Office,Printer,4,250,0,1000,28,Retail
+152,2024-04-09,West,Electronics,Phone,3,600,0.2,1440.0,52,Partner
+153,2023-09-19,South,Electronics,Phone,4,600,0,2400,48,Partner
+154,2023-03-29,West,Furniture,Desk,1,300,0.2,240.0,12,Online
+155,2023-05-14,East,Office,Printer,3,250,0.2,600.0,8,Partner
+156,2024-03-09,East,Electronics,Phone,3,600,0.2,1440.0,7,Partner
+157,2024-06-03,South,Furniture,Chair,1,150,0.1,135.0,28,Partner
+158,2024-01-12,East,Furniture,Desk,1,300,0,300,15,Partner
+159,2023-01-27,North,Electronics,Phone,5,600,0.2,2400.0,35,Online
+160,2023-12-26,South,Furniture,Bookshelf,3,200,0,600,1,Online
+161,2023-05-26,North,Office,Printer,4,250,0,1000,4,Partner
+162,2024-04-09,South,Office,Notebook,4,5,0.05,19.0,44,Retail
+163,2023-03-28,South,Furniture,Bookshelf,3,200,0.2,480.0,7,Online
+164,2023-10-06,West,Office,Notebook,6,5,0,30,57,Retail
+165,2023-08-09,North,Office,Pen Set,4,12,0,48,66,Retail
+166,2024-05-13,East,Furniture,Desk,3,300,0.15,765.0,68,Online
+167,2023-01-08,East,Electronics,Phone,5,600,0,3000,27,Online
+168,2023-05-03,West,Electronics,Phone,3,600,0,1800,1,Partner
+169,2024-06-29,East,Furniture,Desk,2,300,0.05,570.0,30,Online
+170,2023-01-20,North,Furniture,Bookshelf,1,200,0.05,190.0,59,Retail
+171,2024-03-03,North,Office,Pen Set,5,12,0.05,57.0,38,Retail
+172,2024-04-16,North,Electronics,Phone,2,600,0.2,960.0,47,Retail
+173,2024-02-15,North,Electronics,Laptop,4,900,0.1,3240.0,68,Retail
+174,2023-12-08,North,Furniture,Bookshelf,3,200,0,600,22,Partner
+175,2023-07-18,East,Office,Notebook,5,5,0.1,22.5,45,Partner
+176,2023-05-30,South,Office,Notebook,2,5,0,10,33,Online
+177,2023-07-01,West,Office,Notebook,6,5,0,30,64,Partner
+178,2023-11-27,South,Office,Pen Set,6,12,0.1,64.8,41,Retail
+179,2023-11-07,North,Electronics,Phone,4,600,0.15,2040.0,36,Retail
+180,2024-04-07,North,Office,Notebook,3,5,0.05,14.25,5,Retail
+181,2023-04-03,West,Furniture,Desk,6,300,0.2,1440.0,65,Retail
+182,2024-04-05,East,Office,Printer,6,250,0,1500,25,Partner
+183,2024-04-06,East,Furniture,Bookshelf,2,200,0,400,14,Partner
+184,2023-02-10,West,Electronics,Headphones,6,120,0,720,32,Retail
+185,2024-01-08,East,Office,Printer,5,250,0,1250,48,Retail
+186,2023-02-23,North,Furniture,Chair,6,150,0.1,810.0,43,Retail
+187,2023-10-18,South,Electronics,Headphones,6,120,0.05,684.0,33,Retail
+188,2023-12-25,West,Electronics,Headphones,6,120,0,720,40,Online
+189,2024-01-21,South,Office,Printer,1,250,0,250,43,Partner
+190,2023-04-06,East,Office,Printer,6,250,0.1,1350.0,55,Online
+191,2023-12-16,South,Furniture,Chair,2,150,0,300,63,Online
+192,2023-04-14,North,Electronics,Laptop,1,900,0,900,65,Partner
+193,2024-01-21,South,Furniture,Bookshelf,2,200,0.1,360.0,20,Online
+194,2024-03-24,West,Office,Printer,2,250,0.15,425.0,6,Retail
+195,2023-10-19,South,Office,Printer,2,250,0.05,475.0,58,Partner
+196,2023-07-18,West,Electronics,Phone,4,600,0.2,1920.0,48,Retail
+197,2024-03-04,South,Furniture,Chair,5,150,0.1,675.0,21,Partner
+198,2024-05-07,North,Electronics,Phone,1,600,0.15,510.0,48,Partner
+199,2023-06-14,West,Office,Notebook,3,5,0,15,35,Partner
+200,2024-04-06,North,Electronics,Phone,1,600,0,600,45,Retail
+201,2023-08-30,North,Electronics,Phone,5,600,0,3000,50,Retail
+202,2023-12-10,South,Electronics,Laptop,3,900,0,2700,19,Online
+203,2023-05-23,West,Furniture,Chair,6,150,0.2,720.0,61,Partner
+204,2023-08-09,West,Electronics,Laptop,1,900,0,900,20,Online
+205,2023-02-18,West,Furniture,Desk,3,300,0,900,31,Partner
+206,2024-05-26,North,Office,Pen Set,1,12,0,12,69,Partner
+207,2023-05-28,West,Office,Printer,2,250,0.15,425.0,38,Online
+208,2024-03-02,North,Office,Pen Set,2,12,0.1,21.6,24,Partner
+209,2024-06-03,North,Furniture,Desk,5,300,0.1,1350.0,65,Retail
+210,2024-01-18,North,Furniture,Desk,6,300,0.05,1710.0,33,Retail
+211,2023-04-17,South,Electronics,Phone,2,600,0.15,1020.0,43,Online
+212,2023-06-29,West,Furniture,Bookshelf,3,200,0.2,480.0,60,Partner
+213,2024-04-13,East,Electronics,Laptop,1,900,0.15,765.0,5,Online
+214,2023-11-14,West,Electronics,Laptop,1,900,0,900,66,Partner
+215,2023-07-15,East,Furniture,Chair,1,150,0.2,120.0,37,Online
+216,2024-01-12,West,Office,Pen Set,3,12,0,36,56,Partner
+217,2024-05-23,East,Furniture,Chair,3,150,0,450,64,Partner
+218,2023-03-22,South,Furniture,Desk,6,300,0.05,1710.0,56,Partner
+219,2023-12-02,East,Furniture,Chair,1,150,0,150,38,Retail
+220,2024-03-30,West,Office,Printer,4,250,0,1000,45,Online
+221,2023-10-09,North,Office,Pen Set,5,12,0.05,57.0,8,Partner
+222,2023-06-13,South,Office,Pen Set,3,12,0.1,32.4,4,Partner
+223,2023-03-10,East,Office,Pen Set,1,12,0,12,31,Retail
+224,2023-06-07,East,Furniture,Bookshelf,1,200,0.1,180.0,58,Retail
+225,2024-06-26,West,Furniture,Desk,5,300,0,1500,47,Retail
+226,2023-01-27,West,Office,Pen Set,2,12,0,24,24,Partner
+227,2023-09-24,South,Furniture,Bookshelf,1,200,0,200,58,Partner
+228,2023-05-06,North,Furniture,Bookshelf,4,200,0,800,18,Retail
+229,2023-11-24,North,Electronics,Headphones,4,120,0,480,45,Partner
+230,2023-06-11,East,Office,Pen Set,3,12,0.2,28.8,23,Partner
+231,2023-05-23,West,Electronics,Laptop,2,900,0.2,1440.0,31,Online
+232,2024-04-23,North,Furniture,Bookshelf,5,200,0,1000,17,Online
+233,2024-05-05,West,Furniture,Chair,6,150,0.15,765.0,68,Retail
+234,2023-03-17,West,Office,Notebook,2,5,0,10,58,Partner
+235,2023-07-06,West,Office,Pen Set,2,12,0.2,19.2,17,Partner
+236,2023-11-08,South,Electronics,Laptop,5,900,0,4500,22,Retail
+237,2023-10-18,East,Office,Notebook,3,5,0.1,13.5,11,Online
+238,2023-11-07,North,Office,Printer,3,250,0,750,69,Partner
+239,2023-06-07,East,Office,Notebook,5,5,0.1,22.5,22,Partner
+240,2023-09-29,West,Electronics,Laptop,1,900,0,900,27,Partner
+241,2023-10-24,West,Office,Notebook,4,5,0.15,17.0,39,Online
+242,2023-03-16,South,Office,Pen Set,3,12,0.05,34.2,8,Retail
+243,2023-12-15,East,Furniture,Chair,4,150,0,600,19,Partner
+244,2023-05-14,North,Furniture,Bookshelf,3,200,0.05,570.0,48,Retail
+245,2024-04-05,South,Electronics,Phone,1,600,0,600,32,Online
+246,2024-03-04,South,Electronics,Phone,4,600,0.2,1920.0,32,Retail
+247,2023-06-13,West,Office,Printer,3,250,0,750,64,Retail
+248,2024-02-07,West,Furniture,Chair,1,150,0,150,65,Online
+249,2023-02-21,West,Electronics,Headphones,3,120,0,360,37,Partner
+250,2023-01-09,West,Office,Printer,4,250,0,1000,14,Online
+251,2024-02-17,North,Furniture,Bookshelf,3,200,0.2,480.0,47,Retail
+252,2024-01-07,North,Electronics,Headphones,5,120,0,600,37,Retail
+253,2023-05-02,North,Office,Pen Set,5,12,0,60,17,Retail
+254,2023-05-28,West,Furniture,Chair,5,150,0,750,26,Partner
+255,2023-12-08,West,Electronics,Laptop,1,900,0,900,61,Online
+256,2023-11-23,West,Office,Printer,2,250,0,500,21,Partner
+257,2024-06-03,West,Office,Pen Set,5,12,0,60,66,Partner
+258,2023-01-18,East,Office,Pen Set,4,12,0.2,38.4,48,Partner
+259,2023-01-28,East,Electronics,Phone,5,600,0,3000,61,Partner
+260,2023-02-22,South,Office,Printer,2,250,0.15,425.0,62,Partner
+261,2024-01-25,South,Office,Printer,5,250,0.2,1000.0,19,Online
+262,2023-01-20,East,Office,Printer,1,250,0,250,57,Retail
+263,2024-02-25,West,Electronics,Phone,6,600,0,3600,65,Partner
+264,2024-06-15,East,Office,Notebook,6,5,0,30,27,Partner
+265,2023-06-27,East,Furniture,Bookshelf,4,200,0,800,59,Partner
+266,2023-09-28,South,Furniture,Bookshelf,6,200,0.15,1020.0,62,Online
+267,2023-11-01,South,Furniture,Bookshelf,3,200,0,600,37,Partner
+268,2023-12-24,East,Office,Pen Set,3,12,0.05,34.2,36,Online
+269,2024-02-09,South,Office,Printer,5,250,0.05,1187.5,45,Retail
+270,2023-12-21,East,Electronics,Phone,6,600,0,3600,57,Partner
+271,2023-10-05,South,Furniture,Desk,2,300,0.2,480.0,35,Online
+272,2023-09-06,South,Office,Printer,5,250,0,1250,7,Partner
+273,2023-12-05,North,Electronics,Laptop,1,900,0.05,855.0,61,Partner
+274,2024-02-21,West,Electronics,Laptop,5,900,0,4500,61,Partner
+275,2023-03-02,South,Electronics,Phone,3,600,0,1800,12,Partner
+276,2024-03-03,North,Office,Printer,1,250,0,250,23,Retail
+277,2023-10-24,North,Furniture,Desk,6,300,0.2,1440.0,5,Retail
+278,2023-10-19,West,Office,Printer,1,250,0,250,59,Online
+279,2023-04-26,South,Office,Pen Set,3,12,0,36,43,Partner
+280,2023-07-10,East,Furniture,Bookshelf,3,200,0.15,510.0,2,Retail
+281,2024-02-20,East,Office,Printer,2,250,0,500,55,Online
+282,2023-05-24,East,Furniture,Bookshelf,1,200,0,200,62,Online
+283,2024-04-02,East,Electronics,Phone,4,600,0,2400,35,Retail
+284,2023-09-25,South,Office,Printer,5,250,0,1250,47,Online
+285,2023-06-13,East,Office,Notebook,4,5,0,20,52,Partner
+286,2023-08-15,South,Electronics,Headphones,3,120,0,360,29,Retail
+287,2024-01-18,West,Electronics,Phone,6,600,0.1,3240.0,54,Partner
+288,2023-03-25,West,Office,Notebook,2,5,0.15,8.5,68,Partner
+289,2023-04-25,South,Office,Pen Set,1,12,0.1,10.8,8,Partner
+290,2024-06-16,North,Office,Notebook,2,5,0,10,57,Partner
+291,2023-04-04,West,Electronics,Headphones,5,120,0.05,570.0,66,Online
+292,2024-04-12,West,Furniture,Desk,5,300,0.05,1425.0,8,Partner
+293,2023-09-18,South,Furniture,Bookshelf,1,200,0.05,190.0,1,Partner
+294,2023-03-07,North,Electronics,Laptop,4,900,0,3600,70,Online
+295,2023-07-04,West,Furniture,Desk,3,300,0.05,855.0,18,Retail
+296,2023-03-24,South,Furniture,Chair,4,150,0.05,570.0,70,Partner
+297,2024-02-07,South,Furniture,Desk,2,300,0.1,540.0,68,Partner
+298,2024-04-19,West,Electronics,Laptop,1,900,0,900,70,Partner
+299,2023-12-21,East,Furniture,Desk,2,300,0.05,570.0,20,Online
+300,2024-03-05,South,Office,Notebook,1,5,0.2,4.0,3,Online
+301,2024-04-02,South,Electronics,Laptop,5,900,0,4500,7,Partner
+302,2023-08-11,South,Electronics,Phone,4,600,0,2400,8,Partner
+303,2023-11-23,South,Furniture,Desk,6,300,0.1,1620.0,42,Retail
+304,2024-02-28,East,Electronics,Headphones,5,120,0,600,39,Online
+305,2024-03-13,North,Office,Printer,6,250,0,1500,64,Retail
+306,2024-06-21,West,Office,Printer,4,250,0.2,800.0,41,Retail
+307,2024-04-29,South,Electronics,Phone,4,600,0,2400,31,Retail
+308,2024-02-27,South,Office,Notebook,4,5,0,20,54,Retail
+309,2023-03-22,East,Electronics,Phone,2,600,0,1200,58,Online
+310,2023-10-02,North,Office,Printer,2,250,0,500,49,Online
+311,2023-08-11,South,Electronics,Headphones,6,120,0.15,612.0,62,Retail
+312,2023-05-01,South,Furniture,Desk,2,300,0,600,62,Partner
+313,2023-09-03,East,Office,Printer,2,250,0.05,475.0,42,Retail
+314,2023-11-12,East,Furniture,Bookshelf,6,200,0,1200,34,Partner
+315,2024-04-25,South,Furniture,Chair,1,150,0.2,120.0,41,Retail
+316,2023-08-15,North,Furniture,Chair,1,150,0.1,135.0,19,Retail
+317,2024-03-03,South,Office,Printer,5,250,0.15,1062.5,38,Online
+318,2023-09-09,East,Furniture,Desk,4,300,0.1,1080.0,64,Retail
+319,2024-05-17,South,Furniture,Bookshelf,6,200,0.15,1020.0,59,Partner
+320,2024-05-15,North,Furniture,Desk,2,300,0.15,510.0,24,Partner
+321,2023-01-07,South,Electronics,Laptop,6,900,0,5400,53,Partner
+322,2023-01-10,West,Electronics,Laptop,6,900,0,5400,28,Retail
+323,2024-05-09,North,Electronics,Headphones,6,120,0.15,612.0,63,Online
+324,2023-01-18,East,Office,Printer,4,250,0,1000,68,Partner
+325,2024-03-16,North,Furniture,Desk,5,300,0.2,1200.0,23,Online
+326,2024-06-23,East,Office,Notebook,2,5,0,10,33,Retail
+327,2024-04-15,South,Furniture,Desk,3,300,0.05,855.0,32,Retail
+328,2023-02-02,West,Office,Notebook,6,5,0.2,24.0,12,Retail
+329,2023-01-10,North,Furniture,Bookshelf,4,200,0,800,22,Retail
+330,2023-04-08,North,Furniture,Bookshelf,3,200,0.1,540.0,68,Online
+331,2023-10-05,North,Electronics,Headphones,5,120,0.05,570.0,6,Partner
+332,2023-02-03,East,Furniture,Bookshelf,5,200,0.15,850.0,23,Online
+333,2024-02-12,East,Electronics,Headphones,2,120,0.2,192.0,10,Online
+334,2024-02-03,East,Office,Notebook,5,5,0.2,20.0,70,Retail
+335,2023-03-22,East,Office,Notebook,6,5,0.15,25.5,65,Online
+336,2023-03-19,West,Electronics,Phone,2,600,0.2,960.0,44,Retail
+337,2024-04-06,South,Electronics,Headphones,3,120,0.2,288.0,63,Retail
+338,2024-01-25,East,Office,Pen Set,4,12,0,48,11,Online
+339,2023-06-07,South,Office,Notebook,1,5,0,5,49,Partner
+340,2023-04-04,East,Furniture,Chair,3,150,0,450,1,Retail
+341,2023-03-31,West,Furniture,Chair,1,150,0,150,24,Retail
+342,2023-04-16,North,Office,Printer,5,250,0.05,1187.5,4,Retail
+343,2023-11-29,North,Office,Notebook,5,5,0.1,22.5,50,Retail
+344,2023-09-06,South,Furniture,Chair,1,150,0.15,127.5,67,Partner
+345,2023-11-05,West,Furniture,Desk,2,300,0,600,35,Online
+346,2024-03-07,West,Electronics,Laptop,4,900,0,3600,39,Online
+347,2024-05-22,West,Furniture,Chair,2,150,0.15,255.0,26,Online
+348,2023-12-07,East,Electronics,Phone,1,600,0.05,570.0,49,Retail
+349,2023-05-20,East,Furniture,Chair,6,150,0.1,810.0,39,Partner
+350,2023-07-01,East,Office,Notebook,4,5,0,20,51,Retail
+351,2023-09-06,West,Office,Printer,6,250,0.05,1425.0,42,Retail
+352,2023-07-24,South,Furniture,Chair,1,150,0.1,135.0,70,Partner
+353,2023-08-03,East,Office,Notebook,6,5,0.05,28.5,57,Partner
+354,2023-05-23,South,Electronics,Phone,6,600,0.05,3420.0,39,Retail
+355,2024-01-22,West,Office,Notebook,6,5,0.05,28.5,10,Partner
+356,2024-06-02,North,Furniture,Bookshelf,4,200,0.1,720.0,54,Retail
+357,2023-03-29,South,Office,Printer,5,250,0.15,1062.5,14,Partner
+358,2023-02-15,East,Office,Pen Set,2,12,0.15,20.4,52,Retail
+359,2023-08-16,South,Electronics,Laptop,1,900,0,900,66,Retail
+360,2024-05-27,East,Furniture,Chair,4,150,0.2,480.0,20,Online
+361,2023-03-29,South,Furniture,Desk,3,300,0.05,855.0,15,Retail
+362,2023-07-31,West,Furniture,Chair,4,150,0.2,480.0,67,Retail
+363,2024-04-08,North,Furniture,Desk,4,300,0.15,1020.0,41,Retail
+364,2023-12-18,South,Electronics,Headphones,1,120,0,120,14,Partner
+365,2023-06-13,West,Electronics,Headphones,2,120,0.1,216.0,43,Retail
+366,2023-07-10,West,Electronics,Phone,6,600,0,3600,56,Online
+367,2024-03-15,North,Office,Printer,2,250,0.05,475.0,50,Partner
+368,2023-03-06,South,Electronics,Laptop,3,900,0.2,2160.0,14,Retail
+369,2023-09-26,East,Furniture,Desk,4,300,0,1200,63,Partner
+370,2023-04-27,East,Furniture,Bookshelf,4,200,0.1,720.0,45,Retail
+371,2023-11-01,South,Office,Notebook,6,5,0.15,25.5,11,Retail
+372,2023-07-07,South,Electronics,Laptop,3,900,0,2700,48,Partner
+373,2024-01-28,South,Furniture,Chair,5,150,0,750,55,Retail
+374,2023-06-27,West,Office,Printer,6,250,0.15,1275.0,22,Retail
+375,2024-04-06,East,Electronics,Laptop,3,900,0.2,2160.0,7,Online
+376,2024-01-29,West,Furniture,Desk,2,300,0.2,480.0,65,Retail
+377,2024-03-30,South,Office,Pen Set,4,12,0.15,40.8,63,Online
+378,2023-02-03,South,Office,Notebook,2,5,0,10,36,Partner
+379,2024-05-22,North,Furniture,Desk,4,300,0.1,1080.0,66,Partner
+380,2024-01-11,North,Electronics,Phone,5,600,0.2,2400.0,70,Partner
+381,2023-04-15,East,Furniture,Bookshelf,2,200,0.05,380.0,32,Online
+382,2023-03-31,North,Furniture,Chair,3,150,0.2,360.0,57,Online
+383,2023-12-26,South,Electronics,Headphones,5,120,0.15,510.0,55,Partner
+384,2023-03-02,East,Electronics,Laptop,2,900,0.2,1440.0,45,Partner
+385,2023-10-27,East,Office,Notebook,3,5,0.15,12.75,38,Partner
+386,2024-02-26,East,Office,Notebook,2,5,0.2,8.0,8,Partner
+387,2023-05-30,South,Electronics,Headphones,2,120,0,240,42,Partner
+388,2023-10-03,West,Furniture,Chair,2,150,0.1,270.0,54,Retail
+389,2024-06-11,East,Electronics,Headphones,1,120,0.05,114.0,36,Retail
+390,2023-04-06,East,Furniture,Chair,5,150,0,750,59,Online
+391,2023-08-05,East,Office,Pen Set,2,12,0.05,22.8,64,Retail
+392,2023-05-14,East,Furniture,Chair,5,150,0.1,675.0,63,Partner
+393,2024-04-15,North,Electronics,Laptop,1,900,0.15,765.0,3,Online
+394,2023-07-27,East,Furniture,Chair,1,150,0.05,142.5,17,Online
+395,2023-09-14,East,Furniture,Desk,6,300,0,1800,11,Partner
+396,2023-11-09,West,Office,Notebook,1,5,0.05,4.75,30,Partner
+397,2023-08-07,North,Electronics,Headphones,1,120,0,120,62,Online
+398,2024-03-31,North,Office,Notebook,5,5,0.15,21.25,2,Partner
+399,2023-05-16,North,Furniture,Desk,4,300,0.15,1020.0,62,Online
+400,2023-04-15,East,Furniture,Desk,6,300,0.2,1440.0,14,Retail
+401,2023-05-17,North,Furniture,Desk,4,300,0.2,960.0,19,Partner
+402,2023-06-18,East,Office,Notebook,5,5,0.15,21.25,57,Partner
+403,2024-02-26,South,Electronics,Headphones,6,120,0,720,57,Online
+404,2024-01-29,West,Electronics,Laptop,1,900,0.1,810.0,45,Retail
+405,2023-03-28,East,Electronics,Laptop,3,900,0.15,2295.0,32,Partner
+406,2024-06-14,South,Electronics,Headphones,3,120,0,360,66,Partner
+407,2023-09-03,West,Furniture,Chair,6,150,0,900,64,Online
+408,2023-03-14,North,Electronics,Phone,6,600,0.1,3240.0,68,Retail
+409,2024-03-06,South,Furniture,Desk,4,300,0.2,960.0,47,Retail
+410,2023-01-15,South,Electronics,Laptop,5,900,0,4500,34,Online
+411,2024-05-28,West,Electronics,Phone,5,600,0,3000,54,Partner
+412,2023-06-06,North,Furniture,Desk,6,300,0.1,1620.0,36,Retail
+413,2023-06-09,East,Electronics,Headphones,2,120,0.2,192.0,69,Retail
+414,2023-03-09,West,Office,Printer,6,250,0.15,1275.0,40,Partner
+415,2024-03-20,West,Electronics,Laptop,2,900,0,1800,15,Partner
+416,2023-06-29,North,Office,Notebook,3,5,0.15,12.75,16,Partner
+417,2024-05-23,East,Electronics,Headphones,1,120,0,120,45,Online
+418,2023-10-03,North,Furniture,Desk,6,300,0.2,1440.0,16,Retail
+419,2023-09-27,West,Furniture,Chair,5,150,0,750,10,Retail
+420,2023-06-20,South,Office,Pen Set,1,12,0.05,11.4,48,Retail
+421,2023-04-29,North,Electronics,Headphones,6,120,0.15,612.0,30,Online
+422,2024-01-08,South,Electronics,Laptop,1,900,0.05,855.0,50,Online
+423,2024-03-05,East,Electronics,Headphones,6,120,0.15,612.0,29,Online
+424,2023-03-21,North,Furniture,Bookshelf,3,200,0,600,48,Partner
+425,2024-06-12,West,Office,Notebook,2,5,0,10,6,Online
+426,2023-03-30,North,Furniture,Chair,3,150,0,450,59,Retail
+427,2023-11-08,West,Electronics,Phone,5,600,0.2,2400.0,32,Retail
+428,2023-09-09,North,Office,Pen Set,2,12,0.15,20.4,20,Retail
+429,2023-01-10,North,Electronics,Laptop,5,900,0,4500,43,Partner
+430,2023-04-17,South,Furniture,Bookshelf,6,200,0,1200,27,Retail
+431,2023-10-14,North,Furniture,Desk,2,300,0.15,510.0,12,Online
+432,2024-04-14,North,Office,Pen Set,6,12,0,72,11,Partner
+433,2023-03-05,South,Electronics,Headphones,4,120,0,480,56,Online
+434,2024-02-07,East,Furniture,Chair,3,150,0.2,360.0,42,Retail
+435,2023-05-20,South,Furniture,Desk,1,300,0,300,14,Online
+436,2024-02-21,East,Electronics,Phone,4,600,0,2400,16,Online
+437,2023-05-03,South,Furniture,Chair,4,150,0,600,12,Partner
+438,2023-02-11,East,Furniture,Bookshelf,6,200,0.1,1080.0,28,Online
+439,2024-02-10,North,Electronics,Headphones,2,120,0,240,66,Partner
+440,2024-02-19,South,Furniture,Chair,2,150,0,300,58,Online
+441,2023-01-13,South,Furniture,Desk,2,300,0,600,8,Online
+442,2023-03-28,North,Electronics,Phone,3,600,0.15,1530.0,34,Online
+443,2023-05-12,East,Electronics,Laptop,6,900,0.05,5130.0,12,Online
+444,2024-03-19,West,Electronics,Phone,1,600,0,600,51,Online
+445,2023-12-29,South,Furniture,Bookshelf,4,200,0,800,28,Retail
+446,2023-09-09,West,Furniture,Chair,2,150,0,300,38,Retail
+447,2023-10-14,South,Office,Pen Set,1,12,0,12,50,Retail
+448,2023-01-20,East,Electronics,Headphones,5,120,0,600,49,Retail
+449,2024-05-29,West,Office,Pen Set,3,12,0.1,32.4,42,Retail
+450,2023-08-13,East,Electronics,Laptop,3,900,0.1,2430.0,4,Online
+451,2023-08-27,North,Furniture,Bookshelf,3,200,0.2,480.0,21,Online
+452,2023-02-27,West,Office,Notebook,3,5,0.1,13.5,29,Retail
+453,2023-11-22,North,Electronics,Laptop,2,900,0.1,1620.0,46,Partner
+454,2023-05-26,West,Office,Pen Set,5,12,0.1,54.0,25,Partner
+455,2023-04-03,South,Furniture,Desk,4,300,0,1200,8,Partner
+456,2023-01-01,South,Electronics,Laptop,5,900,0.05,4275.0,43,Online
+457,2023-11-28,North,Furniture,Bookshelf,2,200,0.2,320.0,8,Online
+458,2023-04-24,East,Office,Printer,2,250,0.2,400.0,68,Online
+459,2023-04-14,East,Furniture,Bookshelf,6,200,0.05,1140.0,44,Retail
+460,2024-05-13,South,Electronics,Laptop,6,900,0.05,5130.0,41,Partner
+461,2024-01-01,South,Office,Printer,5,250,0.2,1000.0,29,Retail
+462,2023-05-11,North,Furniture,Bookshelf,6,200,0,1200,23,Partner
+463,2023-07-06,South,Office,Pen Set,5,12,0,60,41,Partner
+464,2023-12-06,South,Office,Notebook,4,5,0,20,10,Retail
+465,2023-12-10,North,Furniture,Desk,6,300,0,1800,58,Retail
+466,2023-12-25,North,Electronics,Laptop,6,900,0,5400,33,Partner
+467,2024-03-05,West,Electronics,Laptop,4,900,0.05,3420.0,22,Retail
+468,2023-04-14,South,Furniture,Chair,5,150,0.05,712.5,62,Online
+469,2023-01-21,East,Furniture,Desk,1,300,0,300,41,Online
+470,2023-06-14,North,Electronics,Phone,2,600,0.05,1140.0,10,Retail
+471,2023-02-01,South,Office,Printer,4,250,0.15,850.0,56,Partner
+472,2023-12-06,South,Furniture,Desk,1,300,0,300,27,Retail
+473,2023-09-29,East,Office,Printer,6,250,0.15,1275.0,37,Online
+474,2024-05-17,North,Electronics,Laptop,4,900,0.1,3240.0,20,Retail
+475,2024-05-06,North,Electronics,Phone,1,600,0,600,26,Online
+476,2023-03-25,North,Electronics,Laptop,6,900,0,5400,61,Retail
+477,2023-09-29,West,Furniture,Chair,4,150,0.15,510.0,12,Online
+478,2024-04-01,East,Furniture,Chair,3,150,0,450,6,Retail
+479,2023-10-03,South,Furniture,Chair,2,150,0.2,240.0,8,Partner
+480,2023-12-19,West,Office,Notebook,1,5,0.15,4.25,70,Partner
+481,2024-02-01,West,Electronics,Headphones,1,120,0.2,96.0,67,Partner
+482,2024-05-02,North,Office,Pen Set,5,12,0,60,39,Retail
+483,2024-06-13,North,Office,Notebook,5,5,0.1,22.5,19,Retail
+484,2023-07-17,North,Electronics,Laptop,2,900,0.2,1440.0,17,Retail
+485,2023-06-01,East,Electronics,Headphones,4,120,0,480,34,Partner
+486,2024-02-11,East,Electronics,Laptop,4,900,0.1,3240.0,42,Partner
+487,2024-06-19,North,Furniture,Desk,6,300,0.1,1620.0,54,Retail
+488,2023-04-13,North,Electronics,Laptop,5,900,0.1,4050.0,14,Retail
+489,2024-01-28,West,Office,Pen Set,4,12,0,48,63,Online
+490,2024-02-16,West,Electronics,Phone,4,600,0,2400,5,Retail
+491,2024-05-01,East,Office,Notebook,1,5,0.15,4.25,35,Online
+492,2024-05-18,South,Furniture,Chair,3,150,0,450,13,Online
+493,2023-11-25,West,Furniture,Bookshelf,4,200,0.2,640.0,35,Partner
+494,2023-08-05,West,Office,Notebook,2,5,0.05,9.5,53,Partner
+495,2023-06-12,East,Furniture,Desk,5,300,0.2,1200.0,9,Partner
+496,2024-06-20,South,Office,Pen Set,2,12,0.2,19.2,4,Online
+497,2024-04-12,East,Electronics,Laptop,2,900,0,1800,7,Partner
+498,2024-04-20,West,Electronics,Phone,3,600,0.2,1440.0,65,Partner
+499,2024-01-17,West,Electronics,Headphones,1,120,0,120,63,Online
+500,2023-12-19,East,Furniture,Bookshelf,5,200,0,1000,21,Partner
+501,2024-01-31,South,Office,Notebook,3,5,0,15,7,Partner
+502,2023-07-31,West,Electronics,Laptop,6,900,0,5400,35,Partner
+503,2023-05-16,North,Electronics,Headphones,1,120,0.05,114.0,23,Online
+504,2023-10-09,West,Furniture,Bookshelf,3,200,0.15,510.0,55,Retail
+505,2023-11-06,West,Furniture,Chair,2,150,0.05,285.0,67,Partner
+506,2024-01-19,East,Electronics,Laptop,5,900,0.15,3825.0,37,Partner
+507,2023-10-11,East,Electronics,Phone,1,600,0,600,42,Retail
+508,2023-07-12,South,Office,Printer,6,250,0,1500,20,Online
+509,2023-05-24,West,Office,Pen Set,6,12,0,72,4,Retail
+510,2023-02-06,East,Furniture,Chair,4,150,0.05,570.0,25,Partner
+511,2024-05-02,East,Office,Notebook,6,5,0.1,27.0,46,Online
+512,2023-04-10,South,Office,Printer,2,250,0,500,61,Partner
+513,2023-07-07,North,Furniture,Bookshelf,5,200,0.2,800.0,43,Online
+514,2023-11-11,East,Furniture,Desk,6,300,0.2,1440.0,54,Retail
+515,2023-05-01,North,Furniture,Bookshelf,3,200,0.05,570.0,61,Partner
+516,2024-04-28,North,Office,Printer,5,250,0,1250,25,Partner
+517,2023-02-25,South,Furniture,Bookshelf,3,200,0.05,570.0,20,Online
+518,2023-05-27,South,Furniture,Chair,5,150,0.05,712.5,41,Online
+519,2023-11-17,North,Furniture,Chair,6,150,0,900,8,Retail
+520,2023-06-12,North,Furniture,Desk,2,300,0.1,540.0,63,Online
+521,2024-02-18,West,Office,Pen Set,6,12,0.05,68.4,55,Retail
+522,2024-01-18,East,Electronics,Laptop,5,900,0,4500,2,Partner
+523,2023-09-12,East,Electronics,Laptop,6,900,0,5400,29,Retail
+524,2023-11-10,North,Electronics,Laptop,4,900,0.1,3240.0,22,Online
+525,2024-06-16,East,Furniture,Chair,4,150,0.15,510.0,68,Retail
+526,2024-01-03,South,Office,Notebook,3,5,0.05,14.25,25,Retail
+527,2023-05-15,North,Electronics,Laptop,2,900,0.15,1530.0,28,Partner
+528,2023-02-08,East,Office,Notebook,1,5,0,5,49,Partner
+529,2023-04-21,North,Office,Notebook,5,5,0,25,3,Partner
+530,2023-05-07,West,Electronics,Phone,4,600,0.05,2280.0,33,Partner
+531,2023-01-10,West,Electronics,Laptop,6,900,0.15,4590.0,39,Partner
+532,2023-05-21,North,Electronics,Headphones,5,120,0,600,54,Partner
+533,2023-04-27,West,Office,Printer,1,250,0,250,14,Online
+534,2024-06-19,East,Office,Notebook,3,5,0.2,12.0,26,Partner
+535,2024-05-23,West,Furniture,Chair,2,150,0,300,27,Retail
+536,2023-04-02,West,Electronics,Laptop,1,900,0.15,765.0,15,Online
+537,2023-04-14,South,Electronics,Headphones,1,120,0.15,102.0,33,Retail
+538,2023-04-13,North,Furniture,Chair,4,150,0,600,23,Retail
+539,2023-04-29,North,Furniture,Bookshelf,3,200,0.05,570.0,13,Online
+540,2023-12-03,West,Electronics,Headphones,6,120,0,720,46,Partner
+541,2023-12-17,North,Furniture,Bookshelf,1,200,0,200,24,Retail
+542,2024-01-30,West,Furniture,Chair,3,150,0.2,360.0,62,Partner
+543,2023-03-02,North,Electronics,Laptop,2,900,0.15,1530.0,21,Retail
+544,2024-03-24,West,Office,Pen Set,5,12,0.15,51.0,24,Retail
+545,2023-05-14,West,Office,Notebook,6,5,0.2,24.0,62,Online
+546,2023-09-25,North,Furniture,Chair,1,150,0,150,41,Partner
+547,2023-08-18,North,Office,Printer,6,250,0.1,1350.0,44,Retail
+548,2023-12-21,South,Office,Printer,2,250,0.05,475.0,50,Partner
+549,2023-06-10,West,Office,Notebook,1,5,0.15,4.25,65,Retail
+550,2023-09-04,East,Electronics,Laptop,4,900,0,3600,43,Online
+551,2024-01-23,South,Office,Notebook,5,5,0.15,21.25,52,Online
+552,2023-04-01,West,Furniture,Chair,5,150,0.05,712.5,64,Retail
+553,2023-01-19,West,Electronics,Phone,6,600,0.15,3060.0,14,Retail
+554,2023-04-04,South,Electronics,Headphones,5,120,0,600,39,Partner
+555,2023-02-25,West,Office,Pen Set,3,12,0,36,29,Retail
+556,2024-01-08,North,Office,Printer,5,250,0.05,1187.5,58,Online
+557,2023-12-30,East,Office,Notebook,1,5,0,5,38,Partner
+558,2023-05-24,North,Electronics,Laptop,2,900,0.05,1710.0,53,Retail
+559,2024-02-07,West,Office,Notebook,2,5,0,10,28,Online
+560,2024-02-29,North,Office,Pen Set,1,12,0.2,9.6,6,Retail
+561,2023-05-18,North,Furniture,Bookshelf,5,200,0.1,900.0,64,Partner
+562,2024-05-09,South,Office,Notebook,5,5,0.05,23.75,66,Partner
+563,2023-05-12,West,Office,Notebook,6,5,0.2,24.0,14,Partner
+564,2024-01-29,South,Office,Printer,3,250,0.1,675.0,54,Retail
+565,2023-05-17,West,Furniture,Chair,3,150,0.05,427.5,18,Partner
+566,2023-11-18,South,Office,Printer,5,250,0,1250,28,Online
+567,2023-12-20,South,Office,Printer,3,250,0.15,637.5,17,Partner
+568,2023-04-29,West,Office,Printer,6,250,0,1500,46,Partner
+569,2024-06-30,West,Office,Printer,6,250,0.05,1425.0,37,Online
+570,2023-05-29,North,Office,Notebook,1,5,0.05,4.75,7,Online
+571,2023-09-14,North,Furniture,Desk,3,300,0.15,765.0,19,Partner
+572,2024-01-03,North,Furniture,Desk,5,300,0,1500,58,Partner
+573,2023-08-18,South,Office,Printer,5,250,0.2,1000.0,50,Partner
+574,2023-02-18,West,Office,Pen Set,6,12,0.15,61.2,49,Retail
+575,2023-01-14,South,Office,Pen Set,5,12,0,60,33,Partner
+576,2024-01-12,South,Furniture,Desk,6,300,0.15,1530.0,70,Partner
+577,2023-03-18,South,Electronics,Phone,4,600,0,2400,24,Partner
+578,2024-03-14,East,Office,Notebook,4,5,0,20,36,Online
+579,2023-12-05,South,Electronics,Headphones,3,120,0,360,60,Online
+580,2023-11-05,East,Electronics,Phone,5,600,0,3000,63,Online
+581,2023-07-08,North,Office,Pen Set,5,12,0,60,67,Partner
+582,2024-02-18,East,Electronics,Phone,5,600,0.1,2700.0,12,Online
+583,2024-01-05,South,Electronics,Headphones,3,120,0,360,38,Partner
+584,2023-01-10,East,Office,Pen Set,5,12,0.2,48.0,15,Retail
+585,2023-09-07,East,Electronics,Headphones,5,120,0.1,540.0,6,Retail
+586,2023-10-17,East,Electronics,Phone,3,600,0.1,1620.0,4,Partner
+587,2023-10-31,East,Office,Pen Set,4,12,0,48,25,Partner
+588,2024-06-30,North,Electronics,Laptop,2,900,0.2,1440.0,1,Online
+589,2024-03-10,South,Office,Printer,2,250,0.2,400.0,14,Partner
+590,2023-03-15,North,Office,Printer,4,250,0.15,850.0,20,Retail
+591,2023-03-17,South,Office,Pen Set,1,12,0,12,7,Retail
+592,2023-08-22,West,Office,Notebook,5,5,0.2,20.0,34,Retail
+593,2023-11-20,West,Furniture,Bookshelf,4,200,0.05,760.0,3,Partner
+594,2023-03-06,North,Electronics,Headphones,1,120,0.15,102.0,6,Retail
+595,2023-11-05,East,Office,Notebook,3,5,0.2,12.0,12,Retail
+596,2024-04-30,South,Furniture,Chair,6,150,0,900,21,Online
+597,2023-05-28,East,Office,Pen Set,5,12,0,60,39,Online
+598,2023-02-12,West,Office,Printer,2,250,0,500,1,Partner
+599,2023-12-19,West,Office,Notebook,3,5,0,15,28,Partner
+600,2023-08-15,South,Office,Notebook,2,5,0,10,33,Online

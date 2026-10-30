@@ -1,0 +1,33 @@
+# Render Blueprint: New > Blueprint > pick this repo.
+# Database: create a free Postgres at neon.tech (or use Render Postgres) and paste its URL into DATABASE_URL.
+# NOTE: free web services have an EPHEMERAL disk. nl2query rebuilds each user's DuckDB tables from the
+# upload stored in Postgres, so data survives restarts (see README: "Deployment notes").
+services:
+  - type: web
+    name: nl2query-api
+    runtime: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    plan: free
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - { key: DATABASE_URL, sync: false }
+      - { key: SECRET_KEY, generateValue: true }
+      - { key: ADMIN_EMAILS, sync: false }
+      - { key: LLM_PROVIDER, value: openai }
+      - { key: OPENAI_BASE_URL, value: "https://api.groq.com/openai/v1" }
+      - { key: OPENAI_MODEL, value: "openai/gpt-oss-120b" }
+      - { key: OPENAI_API_KEY, sync: false }
+      - { key: CORS_ORIGINS, sync: false }
+      - { key: DATA_DIR, value: /tmp/data }
+
+  - type: web
+    name: nl2query-ui
+    runtime: docker
+    dockerfilePath: ./frontend/Dockerfile
+    dockerContext: ./frontend
+    plan: free
+    autoDeploy: true
+    envVars:
+      - { key: API_URL, sync: false }   # e.g. https://nl2query-api.onrender.com

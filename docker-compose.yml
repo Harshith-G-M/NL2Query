@@ -1,0 +1,56 @@
+# One command: docker compose up --build        (UI: :8501, API docs: :8000/docs)
+# With a local LLM container:  docker compose --profile local-llm up --build
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: nl2query
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-nl2query}
+      POSTGRES_DB: nl2query
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U nl2query -d nl2query"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  api:
+    build: ./backend
+    env_file: [.env]
+    environment:
+      DATABASE_URL: postgresql://nl2query:${POSTGRES_PASSWORD:-nl2query}@db:5432/nl2query
+      DATA_DIR: /data
+      # Reach an Ollama running on the host machine (Docker Desktop and Linux via host-gateway)
+      OLLAMA_URL: ${OLLAMA_URL:-http://host.docker.internal:11434}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - userdata:/data
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+
+  frontend:
+    build: ./frontend
+    environment:
+      API_URL: http://api:8000
+    ports:
+      - "8501:8501"
+    depends_on:
+      - api
+
+  ollama:            # optional: only with --profile local-llm (then set OLLAMA_URL=http://ollama:11434)
+    image: ollama/ollama:latest
+    profiles: ["local-llm"]
+    volumes:
+      - ollama:/root/.ollama
+    ports:
+      - "11434:11434"
+
+volumes:
+  pgdata:
+  userdata:
+  ollama:

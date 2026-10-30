@@ -1,0 +1,194 @@
+{
+  "datasets": [
+    "sales.csv",
+    "customers.csv"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "difficulty": "easy",
+      "question": "How many orders are there in total?",
+      "expected_sql": "SELECT COUNT(*) FROM sales"
+    },
+    {
+      "id": 2,
+      "difficulty": "easy",
+      "question": "What is the total revenue?",
+      "expected_sql": "SELECT SUM(revenue) FROM sales"
+    },
+    {
+      "id": 3,
+      "difficulty": "easy",
+      "question": "List the distinct regions.",
+      "expected_sql": "SELECT DISTINCT region FROM sales"
+    },
+    {
+      "id": 4,
+      "difficulty": "easy",
+      "question": "How many customers are there?",
+      "expected_sql": "SELECT COUNT(*) FROM customers"
+    },
+    {
+      "id": 5,
+      "difficulty": "easy",
+      "question": "What is the average order quantity?",
+      "expected_sql": "SELECT AVG(quantity) FROM sales"
+    },
+    {
+      "id": 6,
+      "difficulty": "easy",
+      "question": "Which product category has the most orders?",
+      "expected_sql": "SELECT category FROM sales GROUP BY category ORDER BY COUNT(*) DESC LIMIT 1"
+    },
+    {
+      "id": 7,
+      "difficulty": "easy",
+      "question": "How many orders were placed through the Online channel?",
+      "expected_sql": "SELECT COUNT(*) FROM sales WHERE channel = 'Online'"
+    },
+    {
+      "id": 8,
+      "difficulty": "easy",
+      "question": "What is the highest unit price?",
+      "expected_sql": "SELECT MAX(unit_price) FROM sales"
+    },
+    {
+      "id": 9,
+      "difficulty": "easy",
+      "question": "How many distinct products are sold?",
+      "expected_sql": "SELECT COUNT(DISTINCT product) FROM sales"
+    },
+    {
+      "id": 10,
+      "difficulty": "medium",
+      "question": "Total revenue by region, highest first.",
+      "expected_sql": "SELECT region, SUM(revenue) FROM sales GROUP BY region ORDER BY 2 DESC"
+    },
+    {
+      "id": 11,
+      "difficulty": "medium",
+      "question": "Monthly revenue for 2023.",
+      "expected_sql": "SELECT strftime(order_date, '%Y-%m') AS month, SUM(revenue) FROM sales WHERE EXTRACT(year FROM order_date) = 2023 GROUP BY 1 ORDER BY 1"
+    },
+    {
+      "id": 12,
+      "difficulty": "medium",
+      "question": "Top 5 products by total quantity sold.",
+      "expected_sql": "SELECT product, SUM(quantity) FROM sales GROUP BY product ORDER BY 2 DESC LIMIT 5"
+    },
+    {
+      "id": 13,
+      "difficulty": "medium",
+      "question": "Average discount by channel.",
+      "expected_sql": "SELECT channel, AVG(discount) FROM sales GROUP BY channel"
+    },
+    {
+      "id": 14,
+      "difficulty": "medium",
+      "question": "Number of orders per category in the North region.",
+      "expected_sql": "SELECT category, COUNT(*) FROM sales WHERE region = 'North' GROUP BY category"
+    },
+    {
+      "id": 15,
+      "difficulty": "medium",
+      "question": "Which region had the lowest total revenue?",
+      "expected_sql": "SELECT region FROM sales GROUP BY region ORDER BY SUM(revenue) ASC LIMIT 1"
+    },
+    {
+      "id": 16,
+      "difficulty": "medium",
+      "question": "How many customers are in each segment?",
+      "expected_sql": "SELECT segment, COUNT(*) FROM customers GROUP BY segment"
+    },
+    {
+      "id": 17,
+      "difficulty": "medium",
+      "question": "What was the total revenue in 2024?",
+      "expected_sql": "SELECT SUM(revenue) FROM sales WHERE EXTRACT(year FROM order_date) = 2024"
+    },
+    {
+      "id": 18,
+      "difficulty": "medium",
+      "question": "Average revenue per order for each category.",
+      "expected_sql": "SELECT category, AVG(revenue) FROM sales GROUP BY category"
+    },
+    {
+      "id": 19,
+      "difficulty": "medium",
+      "question": "How many distinct customers placed at least one order?",
+      "expected_sql": "SELECT COUNT(DISTINCT customer_id) FROM sales"
+    },
+    {
+      "id": 20,
+      "difficulty": "medium",
+      "question": "How many customers signed up in 2022?",
+      "expected_sql": "SELECT COUNT(*) FROM customers WHERE EXTRACT(year FROM signup_date) = 2022"
+    },
+    {
+      "id": 21,
+      "difficulty": "medium",
+      "question": "What percentage of orders had a discount greater than 10%?",
+      "expected_sql": "SELECT 100.0 * COUNT(*) FILTER (WHERE discount > 0.10) / COUNT(*) FROM sales"
+    },
+    {
+      "id": 22,
+      "difficulty": "hard",
+      "question": "Total revenue by customer segment.",
+      "expected_sql": "SELECT c.segment, SUM(s.revenue) FROM sales s JOIN customers c ON s.customer_id = c.customer_id GROUP BY c.segment"
+    },
+    {
+      "id": 23,
+      "difficulty": "hard",
+      "question": "Top 3 customers by total revenue, with their names.",
+      "expected_sql": "SELECT c.name, SUM(s.revenue) FROM sales s JOIN customers c ON s.customer_id = c.customer_id GROUP BY c.name ORDER BY 2 DESC LIMIT 3"
+    },
+    {
+      "id": 24,
+      "difficulty": "hard",
+      "question": "Which city has the highest total revenue?",
+      "expected_sql": "SELECT c.city FROM sales s JOIN customers c ON s.customer_id = c.customer_id GROUP BY c.city ORDER BY SUM(s.revenue) DESC LIMIT 1"
+    },
+    {
+      "id": 25,
+      "difficulty": "hard",
+      "question": "Show monthly revenue for 2024 and the change from the previous month.",
+      "expected_sql": "WITH m AS (SELECT strftime(order_date, '%Y-%m') AS month, SUM(revenue) AS rev FROM sales WHERE EXTRACT(year FROM order_date) = 2024 GROUP BY 1) SELECT month, rev, rev - LAG(rev) OVER (ORDER BY month) FROM m ORDER BY month"
+    },
+    {
+      "id": 26,
+      "difficulty": "hard",
+      "question": "Which customers have never placed an order?",
+      "expected_sql": "SELECT c.name FROM customers c LEFT JOIN sales s ON c.customer_id = s.customer_id WHERE s.order_id IS NULL"
+    },
+    {
+      "id": 27,
+      "difficulty": "hard",
+      "question": "Revenue share of each region as a percentage of total revenue.",
+      "expected_sql": "SELECT region, 100.0 * SUM(revenue) / (SELECT SUM(revenue) FROM sales) FROM sales GROUP BY region"
+    },
+    {
+      "id": 28,
+      "difficulty": "hard",
+      "question": "For each category, which product earned the most revenue?",
+      "expected_sql": "SELECT category, product FROM (SELECT category, product, RANK() OVER (PARTITION BY category ORDER BY SUM(revenue) DESC) AS rk FROM sales GROUP BY category, product) WHERE rk = 1"
+    },
+    {
+      "id": 29,
+      "difficulty": "hard",
+      "question": "What is the average order value for Enterprise customers?",
+      "expected_sql": "SELECT AVG(s.revenue) FROM sales s JOIN customers c ON s.customer_id = c.customer_id WHERE c.segment = 'Enterprise'"
+    },
+    {
+      "id": 30,
+      "difficulty": "hard",
+      "question": "Which channel has the highest average revenue per order?",
+      "expected_sql": "SELECT channel FROM sales GROUP BY channel ORDER BY AVG(revenue) DESC LIMIT 1"
+    },
+    {
+      "id": 31,
+      "difficulty": "hard",
+      "question": "Total revenue for each combination of region and channel.",
+      "expected_sql": "SELECT region, channel, SUM(revenue) FROM sales GROUP BY region, channel"
+    }
+  ]
+}

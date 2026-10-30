@@ -1,0 +1,33 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Database and local data
+*.db
+*.sqlite
+*.sqlite3
+*.duckdb
+*.duckdb.wal
+backend/data/
+data/
+
+# IDE and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
